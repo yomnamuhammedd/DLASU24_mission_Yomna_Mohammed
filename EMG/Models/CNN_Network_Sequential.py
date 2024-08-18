@@ -72,7 +72,7 @@ class CNNNetworkSeq(nn.Module):
         self.dropout2 = nn.Dropout(0.6)
 
         self.conv3 = nn.Conv1d(in_channels=64, out_channels=128, kernel_size=3, padding='same')
-        self.pool3 = nn.MaxPool1d(kernel_size=2)  # Ensure this is a pooling layer
+        self.pool3 = nn.MaxPool1d(kernel_size=2)  
         self.bn3 = nn.BatchNorm1d(128)
 
         # Calculate the output size after conv layers and pooling
